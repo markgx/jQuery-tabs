@@ -1,0 +1,39 @@
+.tab-bar {
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-bar::after {
+  clear: both;
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.tab-bar li {
+  float: left;
+}
+
+.tab-bar a {
+  padding: 10px;
+  display: block;
+  margin-bottom: -1px;
+  text-decoration: none;
+  color: #777;
+}
+
+.tab-bar a.active {
+  border: 1px solid #ddd;
+  border-bottom-color: #fff;
+  border-radius: 5px 5px 0 0;
+  cursor: default;
+  color: #000;
+}
+
+.tab-content .tab-pane {
+  display: none;
+}
+
+.tab-content .tab-pane.active {
+  display: block;
+}
