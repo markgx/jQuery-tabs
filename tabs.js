@@ -17,6 +17,8 @@
     showTab: function(target) {
       var $target = $(target);
 
+      $target.trigger('show');
+
       $('a.active', this.$el).removeClass('active');
       $target.addClass('active');
 
